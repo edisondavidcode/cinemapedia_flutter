@@ -15,7 +15,7 @@ class MovieMapper {
       popularity: movieDB.popularity,
       posterPath: movieDB.posterPath != ''
           ? 'https://image.tmdb.org/t/p/w500${movieDB.posterPath}'
-          : 'https://cdn-icons-png.flaticon.com/512/2748/2748558.png',
+          : 'no-poster',
       releaseDate: movieDB.releaseDate,
       title: movieDB.title,
       video: movieDB.video,
