@@ -1,4 +1,5 @@
 import 'package:cinemapedia_flutter/presentation/providers/providers.dart';
+import 'package:cinemapedia_flutter/presentation/widgets/shared/custom_bottom_navigation.dart';
 import 'package:cinemapedia_flutter/presentation/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -11,11 +12,11 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-          child: Center(
-        child: _HomeView(),
-      )),
-    );
+        body: Center(
+            child: Center(
+          child: _HomeView(),
+        )),
+        bottomNavigationBar: const CustomBottonNavigation());
   }
 }
 
